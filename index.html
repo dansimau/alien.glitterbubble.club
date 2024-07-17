@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+<title>Alien Contact</title>
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<style>
+@font-face {
+    font-family: 'Unispace';
+    src: url('unispace.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    font-family: Unispace;
+    font-size: 14px;
+    line-height: 20px;
+    background: url('./background.jpg') no-repeat;
+    background-size: cover;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body, div {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+div.column {
+    flex-direction: column;
+}
+p.alien {
+    background: url('./alien.webp') no-repeat;
+    background-size: contain;
+    height: 50vh;
+    width: 50vh;
+    box-shadow: 0 0 8px 8px white inset;
+    border-radius: 50vh;
+}
+.address {
+    font-size: 8px;
+    line-height: 16px;
+}
+.larger {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.typewriter p {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 10px solid purple; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+  /* letter-spacing: .15em; Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: purple; }
+}
+</style>
+</head>
+<body>
+    <div class="column">
+        <div class="typewriter">
+<p class="larger ">Thank you for your participation, human.</p>
+</div>
+<p class="alien">
+</p>
+<p>Please return communication devices to:</p>
+<p class="address">
+    The Dancing Alien<br/>
+    Marnixkade 113-H<br/>
+    Amsterdam<br/>
+    1015 ZL<br/>
+</p>
+<p>We wish to preserve your planet.</p>
+</div>
+</body>
+</html>
